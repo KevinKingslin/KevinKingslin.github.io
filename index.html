@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevin's Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+<img src="./assets/images/me.HEIC" class="avatar">
+<div>
+<h1>Kevin Kingslin</h1>
+<div class="tag"><p class="socials">
+<a href="https://www.linkedin.com/in/kevinkingslin/" target="_blank">LinkedIn</a> •
+<a href="mailto:kevinkingslin@gmail.com">Email</a> •
+<a href="https://x.com/kevinistweeting" target="_blank">Twitter</a> •
+<!-- <a href="https://scholar.google.com/citations?user=" target="_blank">Scholar</a> • -->
+<a href="https://github.com/KevinKingslin" target="_blank">GitHub</a> •
+<a id="cvTab" target="_blank">CV</a>
+</p></div>
+</div>
+</div>
+
+<div class="tabs">
+<div class="tab active" data-tab="about">about me</div>
+<div class="tab" data-tab="research">research</div>
+<div class="tab" data-tab="projects">projects</div>
+<!-- <div class="tab" id="cvTab">cv</div> -->
+</div>
+
+<div class="panel active" id="about">
+<div class="card" style="cursor:default">
+<p>
+Hi! I'm Kevin. I'm an AI Research Engineer working for TCS Research, India. In 2024, I graduated from Indian Institute of Engineering Science and Technology, Shibpur with a bachelors in Computer Science.
+<br><br>
+My research focuses on AI alignment and preference modelling i.e. designing methods that allow models to learn human judgement, taste and intent rather than imitate surface patterns. I'm particularly interested in distilling human novelty, creativity and preferences into learning systems. My work involves working across both text and image modalities, studying how these signals can be represented and measured. For a Layman: I teach machines how to be more human :)
+</p>
+</div>
+</div>
+
+<div class="panel" id="research">
+
+<div style="margin-bottom:50px">
+<div style="color:#c4b5fd;font-size:.75rem;letter-spacing:2px;margin-bottom:18px">
+ONGOING WORK
+</div>
+
+<div class="card" style="cursor:default;">
+<h3>PrefTree</h3>
+
+<p style="margin-bottom:10px">
+<strong>Kevin Kingslin</strong>, Anish Natekar, Ashutosh Ranjan, Vivek Srivastava, Savita Bhat, Shirish Karande
+</p>
+
+<p style="color:#a5b4fc; font-size:.85rem;">
+In progress
+</p>
+</div>
+
+</div>
+
+
+<div style="margin-bottom:50px">
+<div style="color:#c4b5fd;font-size:.75rem;letter-spacing:2px;margin-bottom:18px">
+PUBLISHED WORK
+</div>
+
+<div class="card" style="cursor:default;">
+<h3>Democratic ICAI: Debating Our Way to Steering Principles from Preferences</h3>
+
+<p style="margin-bottom:10px">
+<strong>Kevin Kingslin</strong>, Anish Natekar, Ashutosh Ranjan, Vivek Srivastava, Savita Bhat, Shirish Karande
+</p>
+
+<p style="color:#a5b4fc; font-size:.85rem;">
+ICLR 2026 (Under Review)
+</p>
+
+<p style="margin-top:14px;font-size:.85rem;">
+<a href="#">GitHub</a> • <a href="#">Twitter</a>
+</p>
+</div>
+
+
+</div>
+
+</div>
+
+<div class="panel" id="projects">
+
+<div class="grid">
+
+<div class="card project-card">
+
+<img src="./assets/images/friendly.png" alt="project preview">
+
+<h3>Friend.ly</h3>
+
+<p>
+A social media platform where users share photos, interact via likes and comments, and discover new people to follow through a collaborative filtering recommendation system. It uses a graph-based model with NetworkX to generate relationship-aware suggestions instead of simple popularity rankings.
+</p>
+
+<div class="project-links">
+<a href="#">GitHub →</a>
+</div>
+
+</div>
+
+
+<div class="card project-card">
+
+<img src="./assets/images/nimai.jpg.avif" alt="project preview">
+
+<h3>NimAI</h3>
+
+<p>An AI bot that learns the game of Nim through Q reinforcement learning. The AI bot plays the game with itself for multiple iterations and learns to play with the user.
+</p>
+
+<div class="project-links">
+<a href="#">GitHub →</a>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<script src="./assets/javascript/effects.js"></script>
+</body>
+</html>
