@@ -1,139 +1,824 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kevin's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin's Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
-<link rel="stylesheet" href="./assets/css/styles.css">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<div class="container">
+  <!--
+    - #MAIN
+  -->
 
-<div class="header">
-<img src="./assets/images/me.HEIC" class="avatar">
-<div>
-<h1>Kevin Kingslin</h1>
-<div class="tag"><p class="socials">
-<a href="https://www.linkedin.com/in/kevinkingslin/" target="_blank">LinkedIn</a> •
-<a href="mailto:kevinkingslin@gmail.com">Email</a> •
-<a href="https://x.com/kevinistweeting" target="_blank">Twitter</a> •
-<!-- <a href="https://scholar.google.com/citations?user=" target="_blank">Scholar</a> • -->
-<a href="https://github.com/KevinKingslin" target="_blank">GitHub</a> •
-<a id="cvTab" target="_blank">CV</a>
-</p></div>
-</div>
-</div>
+  <main>
 
-<div class="tabs">
-<div class="tab active" data-tab="about">about me</div>
-<div class="tab" data-tab="research">research</div>
-<div class="tab" data-tab="projects">projects</div>
-<!-- <div class="tab" id="cvTab">cv</div> -->
-</div>
+    <!--
+      - #SIDEBAR
+    -->
 
-<div class="panel active" id="about">
-<div class="card" style="cursor:default">
-<p>
-Hi! I'm Kevin. I'm an AI Research Engineer working for TCS Research, India. In 2024, I graduated from Indian Institute of Engineering Science and Technology, Shibpur with a bachelors in Computer Science.
-<br><br>
-My research focuses on AI alignment and preference modelling i.e. designing methods that allow models to learn human judgement, taste and intent rather than imitate surface patterns. I'm particularly interested in distilling human novelty, creativity and preferences into learning systems. My work involves working across both text and image modalities, studying how these signals can be represented and measured. For a Layman: I teach machines how to be more human :)
-</p>
-</div>
-</div>
+    <aside class="sidebar" data-sidebar>
 
-<div class="panel" id="research">
+      <div class="sidebar-info">
 
-<div style="margin-bottom:50px">
-<div style="color:#c4b5fd;font-size:.75rem;letter-spacing:2px;margin-bottom:18px">
-ONGOING WORK
-</div>
+        <figure class="avatar-box">
+          <img src="./assets/images/kevin.png" alt="Kevin Kingslin" width="80">
+        </figure>
 
-<div class="card" style="cursor:default;">
-<h3>PrefTree</h3>
+        <div class="info-content">
+          <h1 class="name" title="Kevin Kingslin">Kevin Kingslin</h1>
 
-<p style="margin-bottom:10px">
-<strong>Kevin Kingslin</strong>, Anish Natekar, Ashutosh Ranjan, Vivek Srivastava, Savita Bhat, Shirish Karande
-</p>
+          <p class="title">AI Research Engineer</p>
+        </div>
 
-<p style="color:#a5b4fc; font-size:.85rem;">
-In progress
-</p>
-</div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-</div>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:kevinkingslin@gmail.com" class="contact-link">kevinkingslin@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1998-05-30">October 14, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/KevinKingslin/" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/kevinkingslin/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.x.com/kevinistweeting/" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
 
 
-<div style="margin-bottom:50px">
-<div style="color:#c4b5fd;font-size:.75rem;letter-spacing:2px;margin-bottom:18px">
-PUBLISHED WORK
-</div>
-
-<div class="card" style="cursor:default;">
-<h3>Democratic ICAI: Debating Our Way to Steering Principles from Preferences</h3>
-
-<p style="margin-bottom:10px">
-<strong>Kevin Kingslin</strong>, Anish Natekar, Ashutosh Ranjan, Vivek Srivastava, Savita Bhat, Shirish Karande
-</p>
-
-<p style="color:#a5b4fc; font-size:.85rem;">
-ICLR 2026 (Under Review)
-</p>
-
-<p style="margin-top:14px;font-size:.85rem;">
-<!-- <a href="#">GitHub</a> -->
-</p>
-</div>
 
 
-</div>
 
-</div>
+    <!--
+      - #main-content
+    -->
 
-<div class="panel" id="projects">
+    <div class="main-content">
 
-<div class="grid">
+      <!--
+        - #NAVBAR
+      -->
 
-<div class="card project-card">
+      <nav class="navbar">
 
-<img src="./assets/images/friendly.png" alt="project preview">
+        <ul class="navbar-list">
 
-<h3>Friend.ly</h3>
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
 
-<p>
-A social media platform where users share photos, interact via likes and comments, and discover new people to follow through a collaborative filtering recommendation system. It uses a graph-based model with NetworkX to generate relationship-aware suggestions instead of simple popularity rankings.
-</p>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
 
-<div class="project-links">
-<a href="#">GitHub →</a>
-</div>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
 
-</div>
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li> -->
+
+        </ul>
+
+      </nav>
 
 
-<div class="card project-card">
 
-<img src="./assets/images/nimai.jpg.avif" alt="project preview">
 
-<h3>NimAI</h3>
 
-<p>An AI bot that learns the game of Nim through Q reinforcement learning. The AI bot plays the game with itself for multiple iterations and learns to play with the user.
-</p>
+      <!--
+        - #ABOUT
+      -->
 
-<div class="project-links">
-<a href="#">GitHub →</a>
-</div>
+      <article class="about  active" data-page="about">
 
-</div>
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
 
-</div>
-</div>
+        <section class="about-text">
+          <p>            
+            Hi! I'm Kevin. I'm an AI Research Engineer working for TCS Research, India. In 2024, I graduated from Indian Institute of Engineering Science and Technology, Shibpur with a bachelors in Computer Science.
+          </p>
+          <p>
+            My research focuses on AI alignment and preference modelling i.e. designing methods that allow models to learn human judgement, taste and intent rather than imitate surface patterns. I'm particularly interested in distilling human novelty, creativity and preferences into learning systems. My work involves working across both text and image modalities, studying how these signals can be represented and measured.
+          </p>
+          <p>
+            For a Layman: I teach machines how to be more human :)
+          </p>
+        </section>
 
-</div>
 
-<script src="./assets/javascript/effects.js"></script>
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">I'm great at building..</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI Systems</h4>
+
+                <p class="service-item-text">
+                  <!-- Working as a Software Engineer at <a href="https://www.blackmagicdesign.com/" target="_blank">Blackmagic Design</a>, contributing to their flagship industry standard post-production software  <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank">DaVinci Resolve</a>. -->
+                  Designer of evaluation frameworks for large language models. My work focuses on preference modeling, and building automated judges that measure alignment with human intent</a>.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend and Distributed Systems</h4>
+
+                <p class="service-item-text">
+                  I design backend systems that automate messy workflows and make data usable. I like building things that take raw inputs, process them cleanly, and produce reliable outputs without constant human babysitting.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Recommendation Systems</h4>
+
+                <p class="service-item-text">
+                  <!-- Working as a Software Engineer at <a href="https://www.blackmagicdesign.com/" target="_blank">Blackmagic Design</a>, contributing to their flagship industry standard post-production software  <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank">DaVinci Resolve</a>. -->
+                 I enjoy working on systems that model choice, how users behave, what they prefer, and how to personalize experiences without overcomplicating the math.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Creative Side</h4>
+
+                <p class="service-item-text">
+                    Outside of work, I’m learning music production. Still early, but I like exploring how tech and creativity overlap.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+  <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+  <section class="timeline" id="education">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelors in Computer Science and Technology</h4>
+
+              <span>Indian Institute of Engineering Science and Technology, Shibpur</span>
+
+              <p class="timeline-text">
+                2020 - 2024
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+          <section class="timeline" id="industry">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="construct-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AI Research Engineer</h4>
+              <p><a href="https://www.tcs.com/what-we-do/research" target="_blank">TCS Research</a></p>
+              <span>2024 - Present</span>
+
+              <p class="timeline-text">
+                • Engineered a preference modeling pipeline for creative story evaluation (LitBench dataset) by adapting the Inverse Constitutional AI framework: generated reasoning chains and adversarial debate prompts using GPT‑4/GPT‑5, clustered resulting evaluation questions into a “constitution” of preference principles, and trained a decision‑tree classifier as a final preference judge; this pipeline achieved 71.2% accuracy in predicting human‑aligned preferences (3.4 points above the 67.8% ICAI baseline) and culminated in a ICLR 2026 HCAIR workshop submission.
+              </p>
+              <p class="timeline-text">
+                • Engineered an LLM‑based Document Parsing System extracting structured data from 100+ technical specifications, achieving 4.6/5 on G‑Eval quality metrics—enabling automated knowledge retrieval
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Junior Python Developer</h4>
+              <p><a href="https://www.twotwo1bbs.com" target="_blank">221B Baker Street</a></p>
+              <span>2023 - 2024</span>
+
+            <p class="timeline-text">• Built an ETL and analytics pipeline by ingesting Google Ads, LinkedIn, and HubSpot campaign data into BigQuery, enabling unified
+            dashboarding and campaign insight generation for Middle Eastern client.</p>
+            <p class="timeline-text">• Automated campaign and ad ROI analysis workflows using Python Scripts and Automation Tools, reducing manual effort by ∼35%
+            and cutting reporting delays.</p>
+            <p class="timeline-text">• Developed a Django‑based Campaign Automation Tool with Redis and Celery; enabling personalized and scheduled email delivery,
+            increasing campaign throughput by 40%.</p>
+            <p class="timeline-text">• Engineered a custom payroll solution within Odoo to automate complex Davis‑Bacon Wage compliance, integrating strict data validation
+            and audit logging to ensure regulatory accuracy and financial compliance for a U.S. construction client.</p>
+
+
+            </li>
+
+            <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Python Developer Intern</h4>
+            <p><a href="https://www.twotwo1bbs.com" target="_blank">221B Baker Street</a></p>
+            <span>2023</span>
+
+            <p class="timeline-text">• Designed and deployed a Lead Generation Engine that generated verified email permutations from a 100K+ contact dataset of email records boosting lead generation.</p>
+            <p class="timeline-text">• Achieved ∼80% unit test coverage across core modules, ensuring reliability of lead generation pipeline.</p>
+            <p class="timeline-text">• This helped the Business Team to generate more leads and the lead generation went up by 24%</p>
+            <p class="timeline-text">• Gained comprehensive knowledge of online advertising and contextual ad mechanics.</p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mentee (SWE)</h4>
+              <span>Microsoft Engage</span>
+              <span>2022</span>
+
+              <p class="timeline-text">
+                • Built a collaborative filtering recommender system for a social media website (friend.ly) to recommend users to follow based on multiple criterion such as influence, mutual followers, search history and mutual interest.
+              </p>
+              <p class="timeline-text">
+                • Implemented algorithms including matrix factorization (SVD) and k-nearest neighbours (k-NN) to optimize recommendation accuracy.
+              </p>
+            </li>
+
+
+          </ol>
+
+        </section>
+
+        <!-- Compact Skills (merged with Languages) directly after Education -->
+        <span id="languages" aria-hidden="true" style="position: relative; top: -32px;"></span>
+        <section class="timeline" id="skills">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="settings-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Skills</h3>
+          </div>
+
+          <div class="timeline-grid">
+            <ol class="timeline-list">
+                <li class="timeline-item">
+                    <h4 class="h4 timeline-item-title">Programming</h4>
+                    <p class="timeline-text">Python, Java, SQL, JavaScript</p>
+                </li>
+
+                <li class="timeline-item">
+                    <h4 class="h4 timeline-item-title">AI & Machine Learning</h4>
+                    <p class="timeline-text">
+                    LangChain, LangGraph, AutoGen, RAG, PyTorch, Hugging Face Transformers, TensorFlow (basic)
+                    </p>
+                </li>
+
+                <li class="timeline-item">
+                    <h4 class="h4 timeline-item-title">Microservices</h4>
+                    <p class="timeline-text">
+                    Spring Boot, Spring Data JPA, REST APIs, Maven, RabbitMQ
+                    </p>
+                </li>
+                </ol>
+
+                <ol class="timeline-list">
+
+                <li class="timeline-item">
+                    <h4 class="h4 timeline-item-title">Backend & Distributed Systems</h4>
+                    <p class="timeline-text">
+                    Django, Redis, Celery, API Design
+                    </p>
+                </li>
+
+                <li class="timeline-item">
+                    <h4 class="h4 timeline-item-title">databases</h4>
+                    <p class="timeline-text">
+                    ChromaDB, MySQL, PostgreSQL
+                    </p>
+                </li>
+
+                <li class="timeline-item">
+                    <h4 class="h4 timeline-item-title">Deployment & DevOps</h4>
+                    <p class="timeline-text">
+                    Docker, Git, GitHub, Jupyter
+                    </p>
+                </li>
+                </ol>
+          </div>
+
+        </section>
+
+  <!-- Publications (from CV) -->
+  <section class="timeline" id="publications">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="document-text-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Publications</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Democratic ICAI: Debating Our Way to Steering Principles from Preferences</h4>
+              <p class="timeline-text">
+                Kevin Kingslin, Anish Natekar, Ashutosh Ranjan, Vivek Srivastava, Savita Bhat, Shirish Karande
+                <a href="" class="ext-link" target="_blank" rel="noopener noreferrer" aria-label="Open publication" title="Open publication"><ion-icon name="open-outline" class="ext-link-icon"></ion-icon></a>
+              </p>
+            </li>
+          </ol>
+
+        </section>
+
+  <!-- Patents (from CV) -->
+  <section class="timeline" id="patents">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="document-attach-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Patents</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Democratic ICAI: Debating Our Way to Steering Principles from Preferences</h4>
+              <p class="timeline-text">
+                <!-- US-20230306044-A1, 2023. S. Indurkhya, H. J. Vázquez Martínez, A. Salimov, A. Indurkhya, G. Zanfardino, E. Sloan, C. Donalek, M. Amori. -->
+                <a href="" class="ext-link" target="_blank" rel="noopener noreferrer" aria-label="Open patent" title="Open patent"><ion-icon name="open-outline" class="ext-link-icon"></ion-icon></a>
+              </p>
+            </li>
+          </ol>
+
+        </section>
+
+        <!-- Move Awards & Honors to the end of Resume -->
+        <section class="timeline" id="awards">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="ribbon-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Awards & Honors</h3>
+          </div>
+
+          <div class="timeline-grid">
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">International Maths Olympiad, 2020 Gold Medalist</h4>
+                <span>Silver medalist in 2018 and 2016</span>
+              </li>
+            </ol>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">UniquelyU Challenge Award</h4>
+                <span>Secured 3rd position out of 20+ groups in TCS’s UniquelyU Innovation Challenge</span>
+              </li>
+            </ol>
+          </div>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Programming</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Writing</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Research</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Film</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Programming</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Writing</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Animation</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Film</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Theatre</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="programming" data-portfolio-item>
+              <a href=#>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/gifs/splitshade.gif" alt="SplitShade - WebGPU Playground" loading="lazy" portfolio-img>
+                </figure>
+
+                <h3 class="project-title">friend.ly</h3>
+
+                <p class="project-category">Programming</p>
+
+              </a>
+
+              <div class="hidden-portfolio-details">
+                <div data-portfolio-date>
+                  <time datetime="2025">Jun - Aug 2025</time>
+                </div>
+
+                <div data-portfolio-text>
+                  <p>
+                    A powerful, interactive WebGPU shader playground built with Vue.js and TypeScript. Write, test, and experiment with WGSL shaders in real-time with an intuitive web-based IDE.
+                    <br><br>
+                    The playground is deployed <a target="_blank">here</a>. Currently, only Chromium based browsers are supported.
+                </div>
+
+                <div data-portfolio-title>
+                  <a target="_blank">friend.ly</a>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="programming" data-portfolio-item>
+              <a href=#>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/gifs/splitshade.gif" alt="SplitShade - WebGPU Playground" loading="lazy" portfolio-img>
+                </figure>
+
+                <h3 class="project-title">NimAI</h3>
+
+                <p class="project-category">Programming</p>
+
+              </a>
+
+              <div class="hidden-portfolio-details">
+                <div data-portfolio-date>
+                  <time datetime="2025">Jun - Aug 2025</time>
+                </div>
+
+                <div data-portfolio-text>
+                  <p>
+                    A powerful, interactive WebGPU shader playground built with Vue.js and TypeScript. Write, test, and experiment with WGSL shaders in real-time with an intuitive web-based IDE.
+                    <br><br>
+                    The playground is deployed <a target="_blank">here</a>. Currently, only Chromium based browsers are supported.
+                </div>
+
+                <div data-portfolio-title>
+                  <a target="_blank">NimAI</a>
+                </div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - portfolios modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="portfolios-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-image-box">
+                <img src="./assets/images/bob.jpg" alt="Bob" width="80" data-modal-img>
+              </figure>
+
+              <!-- <img src="./assets/images/icon-quote.svg" alt="quote icon"> -->
+            </div>
+
+            <div class="modal-content" id="codingmonkey">
+
+              <h4 class="h3 modal-title" data-modal-title><a  target="_blank">Coding Monkey 808 “Bob”</a></h4>
+
+              <div data-modal-date>
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div data-modal-text>
+                <p>
+                  Roles: Writer, Editor.
+                  <br>
+                  <br>
+
+                  Part of <a href="https://www.storyxperiential.com/" class="external-link">Story Xperiential</a>.
+                  This was a 10-week course, where I learned from Pixar employees and veterans and experimented with their storytelling process through writing and storyboarding a short film.
+                  <br>
+                  <br>
+
+                  Certificate of completion <a href="https://drive.google.com/file/d/1nAGaOFPI0e8Ek-zCuN2l5USPcy8hR32r/view?usp=sharing" class="external-link">here</a>.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!--
+        - #CONTACT
+      -->
+
+      <!-- <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="mailto:kevinkingslin@gmail.com" method="post" enctype="text/plain" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article> -->
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
