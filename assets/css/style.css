@@ -631,7 +631,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
+  color: var(--orange-yellow-crayola);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -1814,4 +1814,15 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .resume-button:hover {
   background-color: var(--vegas-gold);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline-date {
+  font-weight: 500;
+  opacity: 0.8;
 }
