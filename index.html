@@ -85,11 +85,11 @@
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
 
-            <div class="contact-info">
+            <!-- <div class="contact-info">
               <p class="contact-title">Birthday</p>
 
               <time datetime="1998-05-30">October 14, 2002</time>
-            </div>
+            </div> -->
 
           </li>
 
@@ -215,7 +215,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="design icon" width="40">
+                <ion-icon name="hardware-chip-outline" aria-label="AI systems icon"></ion-icon>
               </div>
 
               <div class="service-content-box">
@@ -223,7 +223,7 @@
 
                 <p class="service-item-text">
                   <!-- Working as a Software Engineer at <a href="https://www.blackmagicdesign.com/" target="_blank">Blackmagic Design</a>, contributing to their flagship industry standard post-production software  <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank">DaVinci Resolve</a>. -->
-                  Designer of evaluation frameworks for large language models. My work focuses on preference modeling, and building automated judges that measure alignment with human intent</a>.
+                  Designer of evaluation frameworks for large language models. My work focuses on preference modeling, and building automated judges that measure alignment with human intent.
                 </p>
               </div>
 
@@ -232,7 +232,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="Web development icon" width="40">
+                <ion-icon name="server-outline" aria-label="Backend systems icon"></ion-icon>
               </div>
 
               <div class="service-content-box">
@@ -248,7 +248,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="design icon" width="40">
+                <ion-icon name="git-network-outline" aria-label="Recommendation systems icon"></ion-icon>
               </div>
 
               <div class="service-content-box">
@@ -265,7 +265,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="Web development icon" width="40">
+                <ion-icon name="musical-notes-outline" aria-label="Creative work icon"></ion-icon>
               </div>
 
               <div class="service-content-box">
@@ -627,15 +627,11 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Animation</button>
+                <button data-select-item>Research</button>
               </li>
 
               <li class="select-item">
                 <button data-select-item>Film</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Theatre</button>
               </li>
 
             </ul>
@@ -644,73 +640,233 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="programming" data-portfolio-item>
-              <a href=#>
+            <li class="project-item project-featured active" data-filter-item data-category="research" data-portfolio-item>
+              <a href="#">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/gifs/splitshade.gif" alt="SplitShade - WebGPU Playground" loading="lazy" portfolio-img>
+                  <img src="./assets/images/medical-reviewer-demo.png" alt="Medical Reviewer demo interface" loading="lazy" portfolio-img>
                 </figure>
 
-                <h3 class="project-title">friend.ly</h3>
+                <h3 class="project-title">AI-Led Medical Review Assistant</h3>
 
-                <p class="project-category">Programming</p>
+                <p class="project-category">Research / AI Systems</p>
+
+                <p class="project-summary">
+                  A fine-tuned Qwen3-14B pharmacovigilance assistant that turns clinical safety narratives into structured medical review JSON.
+                </p>
+
+                <ul class="project-tags">
+                  <li>Qwen3-14B</li>
+                  <li>LoRA</li>
+                  <li>FAERS</li>
+                  <li>MedDRA</li>
+                </ul>
+
+                <ul class="project-metrics">
+                  <li><strong>10k</strong><span>FAERS cases</span></li>
+                  <li><strong>80%</strong><span>all fields correct</span></li>
+                  <li><strong>+63.4pp</strong><span>vs base model</span></li>
+                </ul>
 
               </a>
 
               <div class="hidden-portfolio-details">
                 <div data-portfolio-date>
-                  <time datetime="2025">Jun - Aug 2025</time>
+                  <time datetime="2026">Jun - Aug 2026</time>
                 </div>
 
                 <div data-portfolio-text>
                   <p>
-                    A powerful, interactive WebGPU shader playground built with Vue.js and TypeScript. Write, test, and experiment with WGSL shaders in real-time with an intuitive web-based IDE.
+                    An AI-led medical review assistant for pharmacovigilance workflows. It reads an unstructured clinical safety narrative and returns a structured assessment covering seriousness, MedDRA PT/SOC coding with 8-digit codes, labelling status, and WHO-UMC causality.
                     <br><br>
-                    The playground is deployed <a target="_blank">here</a>. Currently, only Chromium based browsers are supported.
+                    The repo builds a complete training pipeline from openFDA FAERS reports, MedDRA lookups, FDA drug label text, Qwen3-32B teacher generation, and Qwen3-14B LoRA fine-tuning. It also includes inference, evaluation, and a Gradio demo interface.
+                    <br><br>
+                    Evaluation showed 94% seriousness accuracy, 94% MedDRA PT accuracy, 98% SOC accuracy, 92% labelling status accuracy, and 80% all-fields-correct performance, a +63.4 percentage point lift over the base model.
+                    <br><br>
+                    Source code is available on <a href="https://github.com/KevinKingslin/medical-reviewer" target="_blank" class="external-link">GitHub</a>.
+                  </p>
                 </div>
 
                 <div data-portfolio-title>
-                  <a target="_blank">friend.ly</a>
+                  <a href="https://github.com/KevinKingslin/medical-reviewer" target="_blank">AI-Led Medical Review Assistant</a>
                 </div>
               </div>
 
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="programming" data-portfolio-item>
-              <a href=#>
+            <li class="project-item project-featured active" data-filter-item data-category="programming" data-portfolio-item>
+              <a href="#">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/gifs/splitshade.gif" alt="SplitShade - WebGPU Playground" loading="lazy" portfolio-img>
+                  <img src="https://raw.githubusercontent.com/KevinKingslin/friend.ly/master/media/images/friend.ly_1.png" alt="friend.ly social network interface" loading="lazy" portfolio-img>
                 </figure>
 
-                <h3 class="project-title">NimAI</h3>
+                <h3 class="project-title">friend.ly</h3>
 
-                <p class="project-category">Programming</p>
+                <p class="project-category">Programming / Recommendation Systems</p>
+
+                <p class="project-summary">
+                  A full-stack social network with image sharing, profiles, follows, and personalized people recommendations built from graph and behavior signals.
+                </p>
+
+                <ul class="project-tags">
+                  <li>Django</li>
+                  <li>Django REST</li>
+                  <li>NetworkX</li>
+                  <li>SQLite</li>
+                </ul>
+
+                <ul class="project-metrics">
+                  <li><strong>4</strong><span>ranking signals</span></li>
+                  <li><strong>2-hop</strong><span>candidate graph</span></li>
+                  <li><strong>4</strong><span>recommendations</span></li>
+                </ul>
 
               </a>
 
               <div class="hidden-portfolio-details">
                 <div data-portfolio-date>
-                  <time datetime="2025">Jun - Aug 2025</time>
+                  <time datetime="2021">2021 - 2022</time>
                 </div>
 
                 <div data-portfolio-text>
                   <p>
-                    A powerful, interactive WebGPU shader playground built with Vue.js and TypeScript. Write, test, and experiment with WGSL shaders in real-time with an intuitive web-based IDE.
+                    friend.ly is a full-stack social media platform built with Django, Django REST Framework, SQLite, and a JavaScript frontend. Users can create image posts, follow profiles, like and comment on posts, search for people, and browse paginated feeds.
                     <br><br>
-                    The playground is deployed <a target="_blank">here</a>. Currently, only Chromium based browsers are supported.
+                    Its recommendation engine builds a directed social graph with NetworkX, finds second-degree connections, and combines mutual-follower influence, Jaccard similarity across liked posts, and profile-search history to rank people a user may know.
+                    <br><br>
+                    The backend includes custom user, follow, post, like, comment, and search-history models plus API routes for the interactive social features.
+                    <br><br>
+                    Source code is available on <a href="https://github.com/KevinKingslin/friend.ly" target="_blank" rel="noopener noreferrer" class="external-link">GitHub</a>.
+                  </p>
                 </div>
 
                 <div data-portfolio-title>
-                  <a target="_blank">NimAI</a>
+                  <a href="https://github.com/KevinKingslin/friend.ly" target="_blank" rel="noopener noreferrer">friend.ly</a>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="project-item project-featured active" data-filter-item data-category="programming" data-portfolio-item>
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://opengraph.githubassets.com/portfolio/KevinKingslin/SecIoT-final" alt="SecIoT security analysis project" loading="lazy" portfolio-img>
+                </figure>
+
+                <h3 class="project-title">SecIoT</h3>
+
+                <p class="project-category">Programming / Cybersecurity</p>
+
+                <p class="project-summary">
+                  An integrated interface for assessing IoT devices, wearables, networks, and companion apps through scanning, exploitation, fuzzing, and static analysis.
+                </p>
+
+                <ul class="project-tags">
+                  <li>React</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                  <li>IoT Security</li>
+                </ul>
+
+                <ul class="project-metrics">
+                  <li><strong>6</strong><span>security tools</span></li>
+                  <li><strong>4</strong><span>analysis modes</span></li>
+                  <li><strong>2</strong><span>target surfaces</span></li>
+                </ul>
+
+              </a>
+
+              <div class="hidden-portfolio-details">
+                <div data-portfolio-date>
+                  <time datetime="2022-08">August 2022</time>
+                </div>
+
+                <div data-portfolio-text>
+                  <p>
+                    SecIoT is a full-stack interface for comprehensive security and forensic analysis of smart-home and healthcare IoT devices and wearables. It separates workflows for networked devices from analysis of the mobile apps used to control them.
+                    <br><br>
+                    The React client provides dedicated flows for Nmap port discovery, OpenVAS vulnerability assessment, Metasploit exploitation, SPIKE fuzzing, MobSF mobile security analysis, and APKTool reverse engineering. Each workflow captures the inputs needed to dispatch its assessment job.
+                    <br><br>
+                    A Node.js and Express service backed by MongoDB handles account registration and sign-in, bcrypt password hashing, session state, and JWT-based authentication.
+                    <br><br>
+                    Source code is available on <a href="https://github.com/KevinKingslin/SecIoT-final" target="_blank" rel="noopener noreferrer" class="external-link">GitHub</a>.
+                  </p>
+                </div>
+
+                <div data-portfolio-title>
+                  <a href="https://github.com/KevinKingslin/SecIoT-final" target="_blank" rel="noopener noreferrer">SecIoT</a>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="project-item project-featured active" data-filter-item data-category="research" data-portfolio-item>
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://opengraph.githubassets.com/portfolio/KevinKingslin/Nim-AI" alt="Nim-AI reinforcement learning project" loading="lazy" portfolio-img>
+                </figure>
+
+                <h3 class="project-title">Nim-AI</h3>
+
+                <p class="project-category">Research / Reinforcement Learning</p>
+
+                <p class="project-summary">
+                  A reinforcement-learning agent that masters the game of Nim through self-play, learning state-action values without a hard-coded strategy.
+                </p>
+
+                <ul class="project-tags">
+                  <li>Python</li>
+                  <li>Q-Learning</li>
+                  <li>Self-Play</li>
+                  <li>Game AI</li>
+                </ul>
+
+                <ul class="project-metrics">
+                  <li><strong>10k</strong><span>training games</span></li>
+                  <li><strong>0.5</strong><span>learning rate</span></li>
+                  <li><strong>ε 0.1</strong><span>exploration rate</span></li>
+                </ul>
+
+              </a>
+
+              <div class="hidden-portfolio-details">
+                <div data-portfolio-date>
+                  <time datetime="2023-09">September 2023</time>
+                </div>
+
+                <div data-portfolio-text>
+                  <p>
+                    Nim-AI is a Python implementation of the mathematical strategy game Nim, paired with an agent that learns entirely through reinforcement learning and self-play.
+                    <br><br>
+                    The agent stores Q-values for state-action pairs and updates them from win, loss, and intermediate rewards. An epsilon-greedy policy balances exploration with the best-known move during training, while gameplay switches to pure exploitation when facing a human.
+                    <br><br>
+                    The included runner trains the agent across 10,000 simulated games before launching an interactive command-line match.
+                    <br><br>
+                    Source code and a gameplay demo are available on <a href="https://github.com/KevinKingslin/Nim-AI" target="_blank" rel="noopener noreferrer" class="external-link">GitHub</a>.
+                  </p>
+                </div>
+
+                <div data-portfolio-title>
+                  <a href="https://github.com/KevinKingslin/Nim-AI" target="_blank" rel="noopener noreferrer">Nim-AI</a>
                 </div>
               </div>
 
